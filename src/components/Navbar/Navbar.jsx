@@ -2,6 +2,7 @@ import css from "./Navbar.module.css";
 import logo from "../assets/logo.png";
 import { BsCart4 } from "react-icons/bs";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [menu, setMenu] = useState("home");
@@ -18,49 +19,58 @@ const Navbar = () => {
             setMenu("home");
           }}
         >
-          Головна {menu === "home" ? <hr /> : <></>}
+          {" "}
+          <Link to="/">Головна</Link>
+          {menu === "home" ? <hr /> : <></>}
         </li>
         <li
           onClick={() => {
             setMenu("dragons");
           }}
         >
-          Дракони {menu === "dragons" ? <hr /> : <></>}
+          <Link to="/dragons">Дракони</Link>
+          {menu === "dragons" ? <hr /> : <></>}
         </li>
         <li
           onClick={() => {
             setMenu("california");
           }}
         >
-          Каліфорнія {menu === "california" ? <hr /> : <></>}
+          <Link to="/california">Каліфорнія</Link>
+          {menu === "california" ? <hr /> : <></>}
         </li>
         <li
           onClick={() => {
             setMenu("philadelphia");
           }}
         >
-          Філадельфія {menu === "philadelphia" ? <hr /> : <></>}
+          <Link to="/philadelphia">Філадельфія</Link>
+          {menu === "philadelphia" ? <hr /> : <></>}
         </li>
         <li
           onClick={() => {
             setMenu("maki");
           }}
         >
-          Макі {menu === "maki" ? <hr /> : <></>}
+          {" "}
+          <Link to="/maki">Макі</Link>
+          {menu === "maki" ? <hr /> : <></>}
         </li>
         <li
           onClick={() => {
             setMenu("futomaki");
           }}
         >
-          Футомакі {menu === "futomaki" ? <hr /> : <></>}
+          <Link to="/futomaki">Футомакі</Link>
+          {menu === "futomaki" ? <hr /> : <></>}
         </li>
         <li
           onClick={() => {
             setMenu("nagiri");
           }}
         >
-          Наґірі {menu === "nagiri" ? <hr /> : <></>}
+          <Link to="/nagiri">Наґірі</Link>
+          {menu === "nagiri" ? <hr /> : <></>}
         </li>
       </ul>
       <div className={css.navLoginCart}>

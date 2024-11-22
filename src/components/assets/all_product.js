@@ -9,5 +9,12 @@ let all_product = [
     new_price: 50.0,
     old_price: 85.5,
   },
-  {},
+  {
+    id: 2,
+    name: "Red Dragons",
+    category: "DRAGONS",
+    image: red_dragon,
+    new_price: 50.0,
+    old_price: 85.5,
+  },
 ];
