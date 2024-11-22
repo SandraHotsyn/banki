@@ -79,3 +79,7 @@
   background: red;
   color: white;
 }
+
+.links {
+  text-decoration: none;
+}

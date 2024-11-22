@@ -20,7 +20,9 @@ const Navbar = () => {
           }}
         >
           {" "}
-          <Link to="/">Головна</Link>
+          <Link to="/" style={{ textDecoration: "none" }}>
+            Головна
+          </Link>
           {menu === "home" ? <hr /> : <></>}
         </li>
         <li
@@ -28,7 +30,9 @@ const Navbar = () => {
             setMenu("dragons");
           }}
         >
-          <Link to="/dragons">Дракони</Link>
+          <Link to="/dragons" style={{ textDecoration: "none" }}>
+            Дракони
+          </Link>
           {menu === "dragons" ? <hr /> : <></>}
         </li>
         <li
@@ -36,7 +40,9 @@ const Navbar = () => {
             setMenu("california");
           }}
         >
-          <Link to="/california">Каліфорнія</Link>
+          <Link to="/california" style={{ textDecoration: "none" }}>
+            Каліфорнія
+          </Link>
           {menu === "california" ? <hr /> : <></>}
         </li>
         <li
@@ -44,7 +50,9 @@ const Navbar = () => {
             setMenu("philadelphia");
           }}
         >
-          <Link to="/philadelphia">Філадельфія</Link>
+          <Link to="/philadelphia" style={{ textDecoration: "none" }}>
+            Філадельфія
+          </Link>
           {menu === "philadelphia" ? <hr /> : <></>}
         </li>
         <li
@@ -53,7 +61,9 @@ const Navbar = () => {
           }}
         >
           {" "}
-          <Link to="/maki">Макі</Link>
+          <Link to="/maki" style={{ textDecoration: "none" }}>
+            Макі
+          </Link>
           {menu === "maki" ? <hr /> : <></>}
         </li>
         <li
@@ -61,7 +71,9 @@ const Navbar = () => {
             setMenu("futomaki");
           }}
         >
-          <Link to="/futomaki">Футомакі</Link>
+          <Link to="/futomaki" style={{ textDecoration: "none" }}>
+            Футомакі
+          </Link>
           {menu === "futomaki" ? <hr /> : <></>}
         </li>
         <li
@@ -69,13 +81,19 @@ const Navbar = () => {
             setMenu("nagiri");
           }}
         >
-          <Link to="/nagiri">Наґірі</Link>
+          <Link to="/nagiri" style={{ textDecoration: "none" }}>
+            Наґірі
+          </Link>
           {menu === "nagiri" ? <hr /> : <></>}
         </li>
       </ul>
       <div className={css.navLoginCart}>
-        <button>Увійти</button>
-        <BsCart4 size={40} />
+        <Link to="/login" style={{ textDecoration: "none" }}>
+          <button>Увійти</button>
+        </Link>
+        <Link to="/cart" className={css.links}>
+          <BsCart4 size={40} />
+        </Link>
         <div className={css.navCartCount}>0</div>
       </div>
     </div>
