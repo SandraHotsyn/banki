@@ -1,6 +1,6 @@
 import red_dragon from "./Червоний дракон.jpg";
 
-let all_product = [
+let data = [
   {
     id: 1,
     name: "Red Dragons",
@@ -9,13 +9,6 @@ let all_product = [
     new_price: 50.0,
     old_price: 85.5,
   },
-  {
-    id: 2,
-    name: "Red Dragons",
-    category: "DRAGONS",
-    image: red_dragon,
-    new_price: 50.0,
-    old_price: 85.5,
-  },
 ];
-export default all_product;
+
+export default data;
