@@ -19,7 +19,6 @@ const Navbar = () => {
             setMenu("home");
           }}
         >
-          {" "}
           <Link to="/" style={{ textDecoration: "none" }}>
             Головна
           </Link>

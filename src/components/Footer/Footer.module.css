@@ -49,4 +49,14 @@
   gap: 30px;
   width: 100%;
   margin-bottom: 30px;
+  color: 1a1a1a;
+  font-size: 20px;
+}
+
+.footerCopyright hr {
+  width: 80%;
+  border: none;
+  border-radius: 10px;
+  height: 3px;
+  background: #c7c7c7;
 }

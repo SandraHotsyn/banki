@@ -4,7 +4,6 @@ import Popular from "../../components/Popular/Popular";
 import NewCollection from "../../components/NewCollection/NewCollection";
 import css from "./Home.module.css";
 import NewsLetter from "../../components/NewsLetter/NewsLetter";
-import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
   return (
@@ -14,7 +13,6 @@ const Home = () => {
       <Offers />
       <NewCollection />
       <NewsLetter />
-      <Footer />
     </div>
   );
 };
