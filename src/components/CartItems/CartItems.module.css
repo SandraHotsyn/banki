@@ -1,0 +1,35 @@
+.csrtItems {
+  margin: 100px 170px;
+}
+
+.csrtItems hr {
+  height: 3px;
+  background: #e2e2e2;
+  border: 0;
+}
+.cartItemsFormatMain {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 75px;
+  padding: 20px 0px;
+  color: #454545;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.cartIconAdd {
+  height: 62px;
+}
+
+.removeIcon {
+  cursor: pointer;
+  margin: 0px 40px;
+}
+
+.quantity {
+  width: 64px;
+  height: 50px;
+  border: 2px solid #ebebeb;
+  background: #fff;
+}

@@ -1,9 +1,12 @@
+import { useContext } from "react";
 import css from "./ProductDisplay.module.css";
 import { PiStarFill, PiStarLight } from "react-icons/pi";
 import { TbCurrencyHryvnia } from "react-icons/tb";
+import { HomeContext } from "../../context/HomeContext";
 
 const ProductDisplay = (props) => {
   const { product } = props;
+  const { addToCart } = useContext(HomeContext);
   return (
     <div className={css.productDisplay}>
       <div className={css.displayLeft}>
@@ -40,7 +43,13 @@ const ProductDisplay = (props) => {
             <div>4</div>
           </div>
         </div>
-        <button>Додати до кошика</button>
+        <button
+          onClick={() => {
+            addToCart(product.id);
+          }}
+        >
+          Додати до кошика
+        </button>
         <p className={css.ProductDisplayCategory}>
           <span>Категорія:</span> Дракон, назва
         </p>
