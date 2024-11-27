@@ -5,7 +5,8 @@ import { IoBagRemoveOutline } from "react-icons/io5";
 import { TbCurrencyHryvnia } from "react-icons/tb";
 
 const CartItems = () => {
-  const { all_products, cartItems, removeFromCart } = useContext(HomeContext);
+  const { getTotalCartAmount, all_products, cartItems, removeFromCart } =
+    useContext(HomeContext);
 
   return (
     <div className={css.csrtItems}>
@@ -51,7 +52,7 @@ const CartItems = () => {
             <div className={css.cartItemsTotalItem}>
               <p>Всього:</p>
               <p>
-                {0} грн. | <TbCurrencyHryvnia />
+                {getTotalCartAmount()} грн. | <TbCurrencyHryvnia />
               </p>
             </div>
             <hr />
@@ -62,15 +63,15 @@ const CartItems = () => {
             <hr />
             <h3>Всього:</h3>
             <h3>
-              {0} грн. | <TbCurrencyHryvnia />
+              {getTotalCartAmount()} грн. | <TbCurrencyHryvnia />
             </h3>
           </div>
         </div>
         <button>ЗАМОВИТИ</button>
       </div>
-      <div>
+      <div className={css.promocode}>
         <p>Якщо у Вас є промокод введіть тут</p>
-        <div>
+        <div className={css.promobox}>
           <input type="text" placeholder="promo" />
           <button>Застосувати</button>
         </div>

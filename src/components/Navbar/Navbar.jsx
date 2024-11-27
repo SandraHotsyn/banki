@@ -1,11 +1,13 @@
 import css from "./Navbar.module.css";
 import logo from "../assets/logo.png";
 import { BsCart4 } from "react-icons/bs";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
+import { HomeContext } from "../../context/HomeContext"; // Підключіть HomeContext
 
 const Navbar = () => {
   const [menu, setMenu] = useState("home");
+  const { getTotalCartItems } = useContext(HomeContext); // Отримайте функцію для підрахунку товарів
 
   return (
     <div className={css.navbar}>
@@ -93,7 +95,8 @@ const Navbar = () => {
         <Link to="/cart" className={css.links}>
           <BsCart4 size={40} />
         </Link>
-        <div className={css.navCartCount}>0</div>
+        {/* Динамічне оновлення лічильника */}
+        <div className={css.navCartCount}>{getTotalCartItems()}</div>
       </div>
     </div>
   );
