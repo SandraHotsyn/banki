@@ -3,22 +3,67 @@
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  height: 90hv;
+  padding: 20px; /* Додано відступи для планшетів і мобільних */
 }
+
 .reletedProducts h2 {
   color: #171717;
-  font-size: 50px;
+  font-size: 36px; /* Зменшено шрифт для адаптації */
   font-weight: 600;
+  text-align: center; /* Центрування для мобільних */
 }
 
 .reletedProducts hr {
-  width: 200px;
-  height: 6px;
+  width: 150px; /* Зменшено ширину для мобільних */
+  height: 4px; /* Тонша лінія */
   border-radius: 10px;
   background: #252525;
 }
+
 .reletedProductsItem {
-  margin-top: 50px;
-  display: flex;
-  gap: 30px;
+  margin-top: 30px; /* Зменшено відступ зверху */
+  display: grid; /* Заміна flex на grid для адаптивності */
+  gap: 20px;
+
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(150px, 1fr)
+  ); /* Автоматична адаптація колонок */
+  justify-items: center; /* Центрування елементів */
+}
+
+/* === Адаптація для планшетів === */
+@media (min-width: 577px) and (max-width: 768px) {
+  .reletedProducts h2 {
+    font-size: 30px; /* Менший шрифт */
+  }
+
+  .reletedProducts hr {
+    width: 120px;
+  }
+
+  .reletedProductsItem {
+    gap: 15px; /* Зменшено проміжки між товарами */
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(180px, 1fr)
+    ); /* Більші елементи на планшетах */
+  }
+}
+
+/* === Адаптація для мобільних === */
+@media (max-width: 576px) {
+  .reletedProducts h2 {
+    font-size: 24px; /* Зменшено шрифт */
+  }
+
+  .reletedProducts hr {
+    width: 100px;
+    height: 3px;
+  }
+
+  .reletedProductsItem {
+    gap: 10px; /* Менший розрив між товарами */
+    grid-template-columns: 1fr; /* Один товар на рядок */
+  }
 }

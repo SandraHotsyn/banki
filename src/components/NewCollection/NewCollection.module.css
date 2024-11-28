@@ -4,23 +4,60 @@
   align-items: center;
   gap: 10px;
   margin-bottom: 100px;
+  padding: 0 20px; /* Додаємо padding для мобільних */
 }
 
 .newCollections h3 {
   color: #171717;
-  font-size: 50px;
+  font-size: 40px; /* Зменшено шрифт */
   font-weight: 600;
+  text-align: center; /* Вирівнюємо текст по центру */
+  margin: 0; /* Забираємо зайві відступи */
 }
 
 .newCollections hr {
-  width: 200px;
-  height: 6px;
+  width: 150px; /* Зменшено ширину */
+  height: 4px; /* Зменшено висоту */
   border-radius: 10px;
   background: #252525;
 }
 
 .collections {
-  margin-top: 50px;
+  margin-top: 30px; /* Зменшено відступ */
   display: flex;
-  gap: 30px;
+  flex-wrap: wrap; /* Додаємо перенесення елементів для мобільних */
+  justify-content: center; /* Вирівнюємо елементи по центру */
+  gap: 20px; /* Зменшено розрив між елементами */
+}
+
+/* === Адаптація для мобільних пристроїв === */
+@media (max-width: 576px) {
+  .newCollections h3 {
+    font-size: 30px; /* Ще менший шрифт для мобільних */
+  }
+
+  .newCollections hr {
+    width: 100px; /* Зменшено ширину лінії */
+    height: 3px;
+  }
+
+  .collections {
+    gap: 10px; /* Зменшено розрив для компактності */
+  }
+}
+
+/* === Адаптація для планшетів === */
+@media (min-width: 577px) and (max-width: 768px) {
+  .newCollections h3 {
+    font-size: 35px; /* Оптимальний розмір шрифту для планшетів */
+  }
+
+  .newCollections hr {
+    width: 120px;
+    height: 3px;
+  }
+
+  .collections {
+    gap: 15px; /* Оптимальний розрив між елементами */
+  }
 }

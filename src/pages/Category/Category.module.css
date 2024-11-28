@@ -1,9 +1,10 @@
 .categoryBanner {
   display: block;
   margin: 30px auto;
-  width: 82%;
+  width: 82%; /* Ширина банера */
 }
 
+/* Контейнер сортування та індексації */
 .categoryIndexSort {
   display: flex;
   margin: 0 170px;
@@ -15,17 +16,22 @@
   padding: 10px 20px;
   border-radius: 40px;
   border: 1px solid #888;
+  cursor: pointer;
 }
+
 .categoryIndexSort p span {
   font-weight: 600;
 }
+
+/* Продукти у вигляді сітки */
 .categoryProducts {
   margin: 20px 170px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* Сітка для десктопів */
   row-gap: 80px;
 }
 
+/* Кнопка "Більше" */
 .categoryLoad {
   display: flex;
   justify-content: center;
@@ -38,4 +44,50 @@
   color: #787878;
   font-size: 18px;
   font-weight: 500;
+  cursor: pointer;
+}
+
+/* === Адаптація для планшетів === */
+@media (min-width: 577px) and (max-width: 768px) {
+  .categoryIndexSort {
+    margin: 0 50px; /* Зменшені відступи */
+    flex-direction: column; /* Вертикальне розташування елементів */
+    gap: 20px;
+  }
+
+  .categoryProducts {
+    margin: 20px 50px;
+    grid-template-columns: 1fr 1fr; /* 2 колонки для планшетів */
+    row-gap: 50px;
+  }
+
+  .categoryBanner {
+    width: 90%; /* Ширина банера для планшетів */
+  }
+}
+
+/* === Адаптація для мобільних === */
+@media (max-width: 576px) {
+  .categoryIndexSort {
+    margin: 0 20px;
+    flex-direction: column; /* Вертикальне розташування */
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .categoryProducts {
+    margin: 20px;
+    grid-template-columns: 1fr; /* 1 колонка для мобільних */
+    row-gap: 40px;
+  }
+
+  .categoryLoad {
+    width: 200px; /* Зменшена ширина кнопки */
+    height: 60px; /* Зменшена висота кнопки */
+    font-size: 16px; /* Менший розмір тексту */
+  }
+
+  .categoryBanner {
+    width: 95%; /* Ширина банера для мобільних */
+  }
 }

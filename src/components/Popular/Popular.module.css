@@ -3,24 +3,60 @@
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  height: 90vh;
+  padding: 20px; /* Додаємо padding для мобільних пристроїв */
+  height: auto; /* Висота автоматично підлаштовується */
 }
 
 .popular h2 {
   color: #171717;
-  font-size: 50px;
+  font-size: 40px; /* Менший розмір шрифту */
   font-weight: 600;
+  text-align: center; /* Центруємо заголовок */
 }
 
 .popular hr {
-  width: 200px;
-  height: 6px;
+  width: 150px; /* Зменшуємо ширину */
+  height: 4px; /* Менша висота */
   border-radius: 10px;
   background: #252525;
 }
 
 .popularItem {
-  margin-top: 50px;
+  margin-top: 30px;
   display: flex;
-  gap: 30px;
+  flex-wrap: wrap; /* Додаємо перенесення елементів */
+  gap: 20px; /* Зменшено відступи між елементами */
+  justify-content: center; /* Центруємо елементи */
+}
+
+/* === Адаптація для мобільних пристроїв === */
+@media (max-width: 576px) {
+  .popular h2 {
+    font-size: 28px; /* Менший розмір заголовку */
+  }
+
+  .popular hr {
+    width: 100px; /* Ще менша ширина */
+    height: 3px;
+  }
+
+  .popularItem {
+    gap: 15px; /* Ще менший відступ між елементами */
+  }
+}
+
+/* === Адаптація для планшетів === */
+@media (min-width: 577px) and (max-width: 768px) {
+  .popular h2 {
+    font-size: 32px; /* Трохи більший шрифт для планшетів */
+  }
+
+  .popular hr {
+    width: 120px;
+    height: 4px;
+  }
+
+  .popularItem {
+    gap: 20px; /* Оптимальні відступи для планшетів */
+  }
 }

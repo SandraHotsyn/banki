@@ -1,39 +1,42 @@
 .hero {
-  height: 100hv;
+  height: 100vh; /* Фіксація висоти */
   background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
   display: flex;
+  flex-wrap: wrap; /* Дозволяє переносити блоки на новий ряд */
+  padding: 20px; /* Відступ для мобільних пристроїв */
 }
 
+/* Ліва частина (текст) */
 .heroLeft {
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 20px;
-  padding-left: 180px;
+  padding: 20px; /* Замість жорсткого padding-left */
   line-height: 1.1;
 }
 
 .heroLeft h2 {
   color: #090909;
-  font-size: 26px;
+  font-size: 24px; /* Менший розмір для мобільних */
   font-weight: 600;
 }
 
 .heroLeft p {
   color: #171717;
-  font-size: 100px;
+  font-size: 40px; /* Зменшено для мобільних */
   font-weight: 700;
 }
 
 .handIcon {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 
 .handIcon img {
-  width: 105px;
+  width: 75px; /* Зменшено розмір іконки */
 }
 
 .heroLatestButton {
@@ -41,19 +44,78 @@
   justify-content: center;
   align-items: center;
   gap: 15px;
-  width: 310px;
-  height: 70px;
-  border-radius: 75px;
-  margin-top: 30px;
+  width: 250px; /* Зменшено ширину кнопки */
+  height: 60px; /* Зменшено висоту кнопки */
+  border-radius: 50px; /* Більш гнучкий дизайн */
+  margin-top: 20px;
   background: #ff4141;
   color: white;
-  font-size: 22px;
+  font-size: 18px; /* Зменшено шрифт для мобільних */
   font-weight: 500;
 }
 
+/* Права частина (зображення) */
 .heroRight {
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.heroRight img {
+  max-width: 90%; /* Обмежено ширину зображення для мобільних */
+  height: auto;
+}
+
+/* === Адаптація для мобільних пристроїв === */
+@media (max-width: 576px) {
+  .hero {
+    flex-direction: column; /* Перехід до вертикального вирівнювання */
+    padding: 10px;
+  }
+
+  .heroLeft {
+    align-items: center; /* Центрування тексту */
+    text-align: center;
+    padding: 10px;
+  }
+
+  .heroLeft p {
+    font-size: 28px; /* Зменшено розмір шрифту */
+  }
+
+  .heroLatestButton {
+    width: 200px; /* Менша кнопка */
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .heroRight img {
+    max-width: 100%; /* Максимальна ширина для адаптації */
+  }
+}
+
+/* === Адаптація для планшетів === */
+@media (min-width: 577px) and (max-width: 768px) {
+  .hero {
+    padding: 15px;
+  }
+
+  .heroLeft {
+    padding: 15px;
+  }
+
+  .heroLeft p {
+    font-size: 35px; /* Розмір між мобільними та десктопами */
+  }
+
+  .heroLatestButton {
+    width: 220px;
+    height: 55px;
+    font-size: 18px;
+  }
+
+  .heroRight img {
+    max-width: 80%;
+  }
 }

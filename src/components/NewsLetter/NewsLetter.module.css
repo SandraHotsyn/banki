@@ -1,55 +1,111 @@
 .newsLetter {
-  width: 65%;
-  height: 40vh;
+  width: 90%; /* Зменшено ширину для адаптації на мобільних */
+  height: auto; /* Автоматична висота */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: auto;
-  padding: 0 140px;
-  margin-bottom: 150px;
+  padding: 20px; /* Зменшено padding для мобільних */
+  margin-bottom: 100px; /* Зменшено відступ знизу */
   background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
-  gap: 30px;
+  gap: 20px; /* Зменшено розрив між елементами */
 }
 
 .newsLetter h3 {
   color: #454545;
-  font-size: 55px;
+  font-size: 40px; /* Зменшено шрифт */
   font-weight: 600;
+  text-align: center; /* Текст по центру */
 }
 
 .newsLetter p {
   color: #454545;
-  font-size: 20px;
+  font-size: 18px; /* Зменшено шрифт */
+  text-align: center; /* Текст по центру */
 }
 
 .newsLetter div {
   display: flex;
+  flex-direction: column; /* Стовпчик для мобільних */
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   background: white;
-  width: 730px;
-  height: 70px;
-  border-radius: 80px;
+  width: 100%; /* Займає всю ширину */
+  max-width: 500px; /* Обмежено максимальну ширину */
+  padding: 10px; /* Додано padding для компактності */
+  border-radius: 50px; /* Зменшено радіус */
   border: 1px solid #aeaeae;
+  gap: 10px; /* Додано розрив між кнопкою та полем вводу */
 }
 
 .newsLetter input {
-  width: 500px;
-  margin-left: 30px;
+  width: 90%; /* Зменшено ширину */
+  margin: 0; /* Забрано зайві відступи */
   border: none;
   outline: none;
   color: #616161;
   font-family: "Times New Roman", Times, serif;
   font-size: 16px;
+  padding: 10px; /* Додано padding для зручності */
+  border-radius: 10px; /* Невеликий радіус для мобільних */
 }
 
 .newsLetter div button {
-  width: 210px;
-  height: 70px;
-  border-radius: 80px;
+  width: 90%; /* Зменшено ширину кнопки */
+  max-width: 200px; /* Обмежено максимальну ширину */
+  height: 50px; /* Зменшено висоту */
+  border-radius: 25px; /* Оптимальний радіус */
   background: black;
   color: white;
   font-size: 16px;
   cursor: pointer;
+}
+
+/* === Адаптація для мобільних пристроїв === */
+@media (max-width: 576px) {
+  .newsLetter h3 {
+    font-size: 30px; /* Ще менший шрифт для мобільних */
+  }
+
+  .newsLetter p {
+    font-size: 16px;
+  }
+
+  .newsLetter div {
+    padding: 15px; /* Зменшено padding */
+  }
+
+  .newsLetter input {
+    font-size: 14px; /* Зменшено шрифт */
+  }
+
+  .newsLetter div button {
+    font-size: 14px; /* Зменшено шрифт кнопки */
+    height: 40px; /* Зменшено висоту */
+  }
+}
+
+/* === Адаптація для планшетів === */
+@media (min-width: 577px) and (max-width: 768px) {
+  .newsLetter h3 {
+    font-size: 35px; /* Оптимальний розмір для планшетів */
+  }
+
+  .newsLetter p {
+    font-size: 18px;
+  }
+
+  .newsLetter div {
+    padding: 20px;
+  }
+
+  .newsLetter input {
+    font-size: 16px;
+  }
+
+  .newsLetter div button {
+    font-size: 16px;
+    height: 50px;
+  }
 }

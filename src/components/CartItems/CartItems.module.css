@@ -1,5 +1,5 @@
 .csrtItems {
-  margin: 100px 170px;
+  margin: 50px 20px; /* Зменшено відступи для компактності */
 }
 
 .csrtItems hr {
@@ -7,12 +7,13 @@
   background: #e2e2e2;
   border: 0;
 }
+
 .cartItemsFormatMain {
   display: grid;
-  grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr; /* Стандартне відображення для великих екранів */
   align-items: center;
-  gap: 75px;
-  padding: 20px 0px;
+  gap: 20px; /* Зменшено розриви для адаптивності */
+  padding: 10px 0px;
   color: #454545;
   font-size: 18px;
   font-weight: 600;
@@ -20,36 +21,41 @@
 
 .cartIconAdd {
   height: 62px;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 8px; /* Додано округлення */
 }
 
 .removeIcon {
   cursor: pointer;
-  margin: 0px 40px;
+  margin: 0px 20px;
 }
 
 .quantity {
-  width: 64px;
-  height: 50px;
+  width: 50px;
+  height: 40px;
   border: 2px solid #ebebeb;
   background: #fff;
+  text-align: center;
 }
 
 .cartItemsDown {
   display: flex;
-  margin: 100px 0px;
+  flex-direction: column; /* Вертикальне розташування для компактності */
+  margin: 50px 0px;
+  gap: 20px;
 }
 
 .cartItemsTotal {
   flex: 1;
   display: flex;
   flex-direction: column;
-  margin-right: 200px;
-  gap: 40px;
+  gap: 20px;
 }
 
 .cartItemsTotalItem {
-  width: 262px;
-  height: 58px;
+  width: auto;
+  padding: 10px 20px;
   outline: none;
   border: none;
   background: #ff5a5a;
@@ -57,38 +63,110 @@
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
+  text-align: center;
 }
 
 .promocode {
-  flex: 1;
   font-size: 16px;
   font-weight: 500;
 }
+
 .promocode p {
   color: #555;
+  margin-bottom: 10px;
+  text-align: center; /* Центрування тексту */
 }
 
 .promobox {
-  width: 504px;
-  margin-top: 15px;
-  padding-left: 20px;
-  height: 58px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding-left: 10px;
+  height: 50px;
   background: #eaeaea;
+  border-radius: 8px;
 }
+
 .promobox input {
   border: none;
   outline: none;
   background: transparent;
-  font-size: 16px;
-  width: 330px;
-  height: 50px;
+  font-size: 14px;
+  width: 70%; /* Адаптивна ширина */
+  height: 100%;
 }
 
 .promobox button {
-  width: 170px;
-  height: 58px;
-  font-size: 16px;
+  width: 30%; /* Адаптивна ширина */
+  font-size: 14px;
   background: black;
   color: white;
   cursor: pointer;
+  border: none;
+}
+
+/* === Адаптація для планшетів === */
+@media (min-width: 577px) and (max-width: 768px) {
+  .cartItemsFormatMain {
+    grid-template-columns: 1fr 2fr 1fr 1fr; /* Менше колонок */
+    gap: 15px; /* Зменшено розриви */
+  }
+
+  .cartItemsDown {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .quantity {
+    width: 40px;
+    height: 35px;
+  }
+}
+
+/* === Адаптація для мобільних === */
+@media (max-width: 576px) {
+  .cartItemsFormatMain {
+    grid-template-columns: 1fr 2fr; /* Тільки зображення і текст */
+    gap: 10px;
+    font-size: 14px; /* Менший розмір шрифту */
+  }
+
+  .cartIconAdd {
+    height: 50px;
+    width: 50px;
+  }
+
+  .cartItemsDown {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .cartItemsTotal h2,
+  .cartItemsTotal h3 {
+    font-size: 18px;
+    text-align: center; /* Центрування заголовків */
+  }
+
+  .promocode p {
+    font-size: 14px; /* Зменшено текст */
+  }
+
+  .promobox {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 5px;
+  }
+
+  .promobox input {
+    width: 100%; /* Повна ширина */
+    height: 40px;
+  }
+
+  .promobox button {
+    width: 100%; /* Повна ширина */
+    height: 40px;
+  }
 }

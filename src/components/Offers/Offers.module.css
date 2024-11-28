@@ -1,49 +1,104 @@
 .offers {
-  width: 65%;
-  height: 60vh;
+  width: 100%; /* Розтягнути на всю ширину екрана */
+  height: auto; /* Автоматична висота */
   display: flex;
+  flex-direction: row; /* Зберігаємо горизонтальне розташування для великих екранів */
   margin: auto;
-  padding: 0 140px;
-  margin-bottom: 150px;
+  padding: 0 20px; /* Зменшено padding для мобільних */
+  margin-bottom: 100px;
   background: linear-gradient(180deg, #fde1ff 0%, #eaffea22 60%);
 }
 
+/* Ліва частина */
 .offersLeft {
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center; /* Центруємо текст для мобільних */
+  text-align: center; /* Текст вирівнюється по центру */
 }
 
 .offersLeft h2 {
   color: #171717;
-  font-size: 80px;
+  font-size: 60px; /* Зменшено розмір шрифту */
   font-weight: 600;
+  margin: 10px 0; /* Додаємо відступи між заголовками */
 }
 
 .offersLeft p {
   color: #171717;
-  font-size: 22px;
+  font-size: 18px; /* Зменшено шрифт для мобільних */
   font-weight: 600;
 }
 
 .offersLeft button {
-  width: 282px;
-  height: 70px;
-  border-radius: 35px;
+  width: 200px; /* Менший розмір кнопки */
+  height: 50px; /* Зменшена висота */
+  border-radius: 25px;
   background: #ff4141;
   border: none;
   color: white;
-  font-size: 22px;
+  font-size: 18px; /* Менший текст */
   font-weight: 500;
-  margin-top: 30px;
+  margin-top: 20px;
   cursor: pointer;
 }
 
+/* Права частина */
 .offersRight {
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 50px;
+  padding-top: 20px;
+}
+
+.offersRight img {
+  max-width: 100%; /* Обмеження ширини для мобільних пристроїв */
+  height: auto; /* Пропорційне масштабування зображення */
+}
+
+/* === Адаптація для мобільних пристроїв === */
+@media (max-width: 576px) {
+  .offers {
+    flex-direction: column; /* Вертикальне розташування */
+    padding: 0 10px;
+  }
+
+  .offersLeft h2 {
+    font-size: 40px; /* Ще менший розмір заголовку */
+  }
+
+  .offersLeft p {
+    font-size: 16px; /* Зменшення тексту опису */
+  }
+
+  .offersLeft button {
+    width: 180px;
+    height: 45px;
+    font-size: 16px;
+  }
+}
+
+/* === Адаптація для планшетів === */
+@media (min-width: 577px) and (max-width: 768px) {
+  .offers {
+    flex-direction: column; /* Вертикальне розташування для планшетів */
+    padding: 0 30px;
+  }
+
+  .offersLeft h2 {
+    font-size: 50px; /* Оптимальний розмір тексту для планшетів */
+  }
+
+  .offersLeft p {
+    font-size: 18px;
+  }
+
+  .offersLeft button {
+    width: 220px;
+    height: 50px;
+    font-size: 18px;
+  }
 }

@@ -1,29 +1,88 @@
 .item {
-  width: 350px;
+  width: 100%; /* Встановлено ширину на всю доступну */
+  max-width: 300px; /* Обмежено максимальну ширину */
+  margin: auto; /* Центрування елементів */
+  display: flex;
+  flex-direction: column; /* Вертикальне розташування для маленьких екранів */
+  align-items: center;
+  gap: 10px; /* Додано розрив між елементами */
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Додано округлення для зручного вигляду */
+  cursor: pointer;
+  object-fit: cover; /* Забезпечує гарне обрізання зображення */
 }
 
 .item p {
   margin: 6px 0;
+  font-size: 16px; /* Оптимальний розмір для тексту */
+  text-align: center; /* Текст по центру */
 }
 
 .itemPrices {
   display: flex;
-  gap: 20px;
+  gap: 10px; /* Зменшено розрив для компактності */
+  justify-content: center; /* Ціни вирівняно по центру */
 }
 
 .itemPricesNew {
   color: #374151;
-  font-size: 18px;
+  font-size: 16px; /* Зменшено розмір шрифту */
   font-weight: 600;
 }
 
 .itemPricesOld {
   color: #8c8c8c;
-  font-size: 18px;
+  font-size: 14px; /* Зменшено розмір шрифту для старої ціни */
   font-weight: 500;
+  text-decoration: line-through; /* Перекреслення для старої ціни */
 }
 
 .item:hover {
   transform: scale(1.05);
   transition: 0.6s;
+}
+
+/* === Адаптація для планшетів === */
+@media (min-width: 577px) and (max-width: 768px) {
+  .item {
+    max-width: 250px; /* Зменшено ширину для планшетів */
+  }
+
+  .itemPricesNew,
+  .itemPricesOld {
+    font-size: 14px; /* Менший шрифт на планшетах */
+  }
+}
+
+/* === Адаптація для мобільних === */
+@media (max-width: 576px) {
+  .item {
+    max-width: 100%; /* Повна ширина на мобільних */
+  }
+
+  .item img {
+    border-radius: 6px; /* Менше округлення */
+  }
+
+  .item p {
+    font-size: 14px; /* Менший текст для мобільних */
+  }
+
+  .itemPrices {
+    flex-direction: column; /* Вертикальне розташування цін */
+    align-items: center; /* Центрування цін */
+    gap: 5px; /* Зменшено розрив */
+  }
+
+  .itemPricesNew {
+    font-size: 14px;
+  }
+
+  .itemPricesOld {
+    font-size: 12px;
+  }
 }

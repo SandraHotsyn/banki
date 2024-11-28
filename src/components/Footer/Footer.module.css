@@ -3,36 +3,43 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 40px;
+  padding: 20px;
 }
 
 .footerLogo {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
 }
 
 .footerLogo p {
   color: #383838;
-  font-size: 46px;
+  font-size: 36px; /* Зменшено для мобільних */
   font-weight: 700;
+  text-align: center;
 }
 
 .footerLinks {
   display: flex;
   list-style: none;
-  gap: 50px;
+  gap: 30px; /* Зменшений відступ між пунктами */
   color: #252525;
-  font-size: 20px;
+  font-size: 18px; /* Трохи зменшено */
+  flex-wrap: wrap; /* Дозволяє переносити елементи на новий рядок */
+  justify-content: center; /* Центрування на малих екранах */
+  text-align: center;
 }
 
 .footerLinks li {
   cursor: pointer;
+  margin: 5px 0; /* Додає відступ для вертикального розташування */
 }
 
 .footerSocialIcon {
   display: flex;
-  gap: 20px;
+  gap: 15px;
+  justify-content: center;
 }
 
 .footerIconsConteiner {
@@ -40,23 +47,76 @@
   padding-bottom: 6px;
   background: #fbfbfb;
   border: 1px solid #ebebeb;
+  border-radius: 10px; /* Додає округлення для більш сучасного вигляду */
 }
 
 .footerCopyright {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 15px;
   width: 100%;
-  margin-bottom: 30px;
-  color: 1a1a1a;
-  font-size: 20px;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+  font-size: 16px; /* Зменшений шрифт */
+  text-align: center; /* Центрування тексту */
 }
 
 .footerCopyright hr {
-  width: 80%;
+  width: 90%; /* Трохи ширше для адаптивності */
   border: none;
   border-radius: 10px;
-  height: 3px;
+  height: 2px; /* Зменшено висоту */
   background: #c7c7c7;
+}
+
+/* === Адаптація для мобільних і планшетів === */
+
+/* Телефони (ширина екрана до 576px) */
+@media (max-width: 576px) {
+  .footerLogo p {
+    font-size: 28px; /* Зменшено для мобільних пристроїв */
+  }
+
+  .footerLinks {
+    flex-direction: column; /* Вертикальне розташування */
+    gap: 10px; /* Менший відступ між пунктами */
+  }
+
+  .footerLinks li {
+    font-size: 16px; /* Менший шрифт */
+  }
+
+  .footerSocialIcon {
+    flex-wrap: wrap; /* Розташування в два ряди, якщо не вистачає місця */
+    gap: 10px;
+  }
+
+  .footerIconsConteiner {
+    padding: 8px; /* Зменшення для компактності */
+  }
+
+  .footerCopyright {
+    font-size: 14px; /* Зменшено для менших екранів */
+  }
+}
+
+/* Планшети (ширина екрана від 577px до 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .footerLogo p {
+    font-size: 32px; /* Трохи зменшено */
+  }
+
+  .footerLinks {
+    gap: 20px; /* Відступ між пунктами для планшетів */
+    font-size: 16px;
+  }
+
+  .footerIconsConteiner {
+    padding: 9px; /* Налаштування для планшетів */
+  }
+
+  .footerCopyright {
+    font-size: 15px; /* Зменшення шрифту */
+  }
 }
