@@ -1,3 +1,22 @@
-.pp {
-  color: blueviolet;
+.cart {
+  margin: 30px 170px; /* Відступи для десктопів */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* === Адаптація для планшетів === */
+@media (min-width: 577px) and (max-width: 768px) {
+  .cart {
+    margin: 20px 50px; /* Зменшені відступи для планшетів */
+    gap: 15px;
+  }
+}
+
+/* === Адаптація для мобільних === */
+@media (max-width: 576px) {
+  .cart {
+    margin: 10px 20px; /* Компактні відступи для мобільних */
+    gap: 10px;
+  }
 }

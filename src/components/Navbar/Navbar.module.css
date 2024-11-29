@@ -86,6 +86,9 @@
 .links {
   text-decoration: none;
 }
+.dropDown {
+  display: none;
+}
 
 /* === Адаптація для мобільних і планшетів === */
 
@@ -123,6 +126,15 @@
     margin-top: 0; /* Виправлення позиціонування для мобільних */
     margin-left: 0;
     position: relative;
+  }
+  .dropDown {
+    display: block;
+    rotate: -90deg;
+    transition: 0.5s;
+  }
+
+  .visible {
+    display: flex;
   }
 }
 

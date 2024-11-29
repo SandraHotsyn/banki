@@ -1,72 +1,153 @@
 .loginSignup {
   width: 100%;
-  height: 80vh;
+  height: auto;
   background: #fce3fe;
-  padding-top: 100px;
+  padding: 50px 20px; /* Додано внутрішні відступи для мобільних */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .loginSignupContainer {
-  width: 580px;
-  height: 600px;
+  width: 580px; /* Для десктопів */
+  max-width: 100%; /* Додано для адаптації */
+  height: auto;
   background: white;
-  margin: 0 auto;
-  padding: 40px 60px;
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .loginSignupContainer h3 {
   margin: 20px 0px;
+  text-align: center;
+  font-size: 28px;
 }
 
 .loginSignupFilds {
   display: flex;
   flex-direction: column;
-  gap: 29px;
+  gap: 20px;
   margin-top: 30px;
 }
 
 .loginSignupFilds input {
-  height: 72px;
-  width: 100%;
+  height: 50px;
+  width: 100%; /* Гарантує, що інпути займають всю ширину контейнера */
   padding-left: 20px;
   border: 1px solid #c9c9c9;
+  border-radius: 5px;
   outline: none;
   color: #5c5c5c;
-  font-size: 18px;
+  font-size: 16px;
+  box-sizing: border-box; /* Забезпечує правильне врахування відступів і ширини */
 }
 
 .loginSignupContainer button {
-  width: 580px;
-  height: 72px;
+  width: 100%; /* Гарантує, що кнопка займає всю ширину контейнера */
+  height: 50px; /* Зменшено для мобільних */
   color: white;
-  background: red;
+  background: #ff4141;
   margin-top: 30px;
   border: none;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .loginSignupContainer button:active {
-  border: #ff4141;
+  background: #e63b3b;
 }
 
 .loginSignupLogin {
   margin-top: 20px;
   color: #5c5c5c;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 16px; /* Зменшено для мобільних */
+  text-align: center;
 }
 
 .loginSignupLogin span {
   color: #ff4141;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .loginSignupAgree {
   display: flex;
   align-items: center;
   margin-top: 25px;
-  gap: 20px;
+  gap: 15px;
   color: #5c5c5c;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 16px; /* Зменшено */
+}
+
+.loginSignupAgree p {
+  margin: 0;
+  font-size: 14px; /* Оптимізовано для мобільних */
+}
+
+/* === Адаптація для планшетів === */
+@media (min-width: 577px) and (max-width: 768px) {
+  .loginSignupContainer {
+    width: 90%;
+    padding: 30px 20px;
+  }
+
+  .loginSignupContainer h3 {
+    font-size: 24px;
+  }
+
+  .loginSignupFilds input {
+    height: 45px;
+    font-size: 14px;
+  }
+
+  .loginSignupContainer button {
+    height: 45px;
+    font-size: 18px;
+  }
+
+  .loginSignupLogin {
+    font-size: 14px;
+  }
+
+  .loginSignupAgree {
+    font-size: 14px;
+  }
+}
+
+/* === Адаптація для мобільних === */
+@media (max-width: 576px) {
+  .loginSignup {
+    padding: 20px; /* Оптимізовано для маленьких екранів */
+  }
+
+  .loginSignupContainer {
+    width: 100%; /* Займає всю ширину екрану */
+    padding: 20px;
+  }
+
+  .loginSignupContainer h3 {
+    font-size: 20px;
+  }
+
+  .loginSignupFilds input {
+    height: 40px; /* Зменшено висоту для мобільних */
+    font-size: 14px;
+  }
+
+  .loginSignupContainer button {
+    height: 45px;
+    font-size: 16px;
+  }
+
+  .loginSignupLogin {
+    font-size: 12px;
+  }
+
+  .loginSignupAgree {
+    font-size: 12px;
+    gap: 10px;
+  }
 }
