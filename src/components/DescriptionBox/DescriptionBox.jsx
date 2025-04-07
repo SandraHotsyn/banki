@@ -8,8 +8,8 @@ const DescriptionBox = () => {
         <div className={css.descNavBox}> Відгуки (122)</div>
       </div>
       <div className={css.descrBoxDescription}>
-        <p>dzgxbsxf</p>
-        <p>SDZxfbx</p>
+        <p>dzgxzxfcghnmbnbsxf</p>
+        <p>SDZxxgcvbgnfbx</p>
       </div>
     </div>
   );

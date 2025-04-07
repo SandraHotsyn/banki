@@ -52,11 +52,21 @@ const Navbar = () => {
         </li>
         <li
           onClick={() => {
+            setMenu("california1");
+          }}
+        >
+          <Link to="/california1" style={{ textDecoration: "none" }}>
+            Каліфорнія в ікрі
+          </Link>
+          {menu === "california1" ? <hr /> : <></>}
+        </li>
+        <li
+          onClick={() => {
             setMenu("california");
           }}
         >
           <Link to="/california" style={{ textDecoration: "none" }}>
-            Каліфорнія
+            Каліфорнія в кунжуті
           </Link>
           {menu === "california" ? <hr /> : <></>}
         </li>
@@ -89,6 +99,36 @@ const Navbar = () => {
             Футомакі
           </Link>
           {menu === "futomaki" ? <hr /> : <></>}
+        </li>
+        <li
+          onClick={() => {
+            setMenu("sets");
+          }}
+        >
+          <Link to="/sets" style={{ textDecoration: "none" }}>
+            CЕТИ
+          </Link>
+          {menu === "sets" ? <hr /> : <></>}
+        </li>
+        <li
+          onClick={() => {
+            setMenu("original");
+          }}
+        >
+          <Link to="/original" style={{ textDecoration: "none" }}>
+            Оригінальні
+          </Link>
+          {menu === "original" ? <hr /> : <></>}
+        </li>
+        <li
+          onClick={() => {
+            setMenu("Deep-fried");
+          }}
+        >
+          <Link to="/Deep-fried" style={{ textDecoration: "none" }}>
+            Роли у фритюрі
+          </Link>
+          {menu === "Deep-fried" ? <hr /> : <></>}
         </li>
         <li
           onClick={() => {
