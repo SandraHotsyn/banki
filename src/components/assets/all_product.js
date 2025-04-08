@@ -1,4 +1,26 @@
-import red_dragon from "./Червоний дракон.jpg";
+import red_dragon from "./red_dragon.jpg";
+import photo_vugor from "./photo_vugor.jpg";
+import photo_kopchenyi from "./photo_kopchenyi.jpg";
+import photo_krevetka from "./photo_krevetka.jpg";
+import photo_losos from "./photo_losos.jpg";
+import photo_syr from "./photo_syr.jpg";
+
+import cheezu_vugor from "./cheezu_vugor.jpg";
+import cheezu_kopchenyi from "./cheezu_kopchenyi.jpg";
+import cheezu_krevetka from "./cheezu_krevetka.jpg";
+import cheezu_losos from "./cheezu_losos.jpg";
+import cheezu_set from "./cheezu_set.jpg";
+import cheezu_surmii from "./cheezu_surmii.jpg";
+import cheezu from "./cheezu.jpg";
+
+import black_dragon from "./black_dragon.jpg";
+import shikai from "./shikai.jpg";
+import youzu from "./youzu.jpg";
+
+import new_year from "./NewYear.png";
+import noitra from "./Noitra.jpg";
+import rainbow from "./rainbow.jpg";
+import shares from "./shares.jpg";
 
 let all_product = [
   {
@@ -12,19 +34,163 @@ let all_product = [
   {
     id: 2,
     name: "Тигровий Дракон",
-    category: "dragons",
-    image: red_dragon,
-    new_price: 50.0,
-    old_price: 85.5,
-  },
-
-  {
-    id: 2,
-    name: "Тигровий Дракон",
     category: "maki",
     image: red_dragon,
     new_price: 50.0,
     old_price: 85.5,
   },
+  {
+    id: 3,
+    name: "фото вугор",
+    category: "other",
+    image: photo_vugor,
+    new_price: 50.0,
+    old_price: 85.5,
+  },
+  {
+    id: 4,
+    name: "фото копчений",
+    category: "other",
+    image: photo_kopchenyi,
+    new_price: 50.0,
+    old_price: 85.5,
+  },
+  {
+    id: 5,
+    name: "фото креветка",
+    category: "other",
+    image: photo_krevetka,
+    new_price: 50.0,
+    old_price: 85.5,
+  },
+  {
+    id: 6,
+    name: "фото лосось",
+    category: "other",
+    image: photo_losos,
+    new_price: 50.0,
+    old_price: 85.5,
+  },
+  {
+    id: 7,
+    name: "фото сир",
+    category: "other",
+    image: photo_syr,
+    new_price: 50.0,
+    old_price: 85.5,
+  },
+  {
+    id: 8,
+    name: "чізу вугор",
+    category: "cheezu",
+    image: cheezu_vugor,
+    new_price: 50.0,
+    old_price: 85.5,
+  },
+  {
+    id: 9,
+    name: "чізу копчений",
+    category: "cheezu",
+    image: cheezu_kopchenyi,
+    new_price: 50.0,
+    old_price: 85.5,
+  },
+  {
+    id: 10,
+    name: "чізу креветка",
+    category: "cheezu",
+    image: cheezu_krevetka,
+    new_price: 50.0,
+    old_price: 85.5,
+  },
+  {
+    id: 11,
+    name: "чізу лосось",
+    category: "cheezu",
+    image: cheezu_losos,
+    new_price: 50.0,
+    old_price: 85.5,
+  },
+  {
+    id: 12,
+    name: "чізу set",
+    category: "cheezu",
+    image: cheezu_set,
+    new_price: 50.0,
+    old_price: 85.5,
+  },
+  {
+    id: 14,
+    name: "чізу сурмії",
+    category: "cheezu",
+    image: cheezu_surmii,
+    new_price: 50.0,
+    old_price: 85.5,
+  },
+  {
+    id: 15,
+    name: "чізу",
+    category: "cheezu",
+    image: cheezu,
+    new_price: 50.0,
+    old_price: 85.5,
+  },
+  {
+    id: 16,
+    name: "Чорний дракон",
+    category: "dragons",
+    image: black_dragon,
+    new_price: 50.0,
+    old_price: 85.5,
+  },
+  {
+    id: 17,
+    name: "шикай",
+    category: "sets",
+    image: shikai,
+    new_price: 50.0,
+    old_price: 85.5,
+  },
+  {
+    id: 18,
+    name: "юзу",
+    category: "sets",
+    image: youzu,
+    new_price: 50.0,
+    old_price: 85.5,
+  },
+  {
+    id: 22,
+    name: "NewYear",
+    category: "sets",
+    image: new_year,
+    new_price: 50.0,
+    old_price: 85.5,
+  },
+  {
+    id: 23,
+    name: "Noitra",
+    category: "sets",
+    image: noitra,
+    new_price: 50.0,
+    old_price: 85.5,
+  },
+  {
+    id: 24,
+    name: "rainbow",
+    category: "sets",
+    image: rainbow,
+    new_price: 50.0,
+    old_price: 85.5,
+  },
+  {
+    id: 25,
+    name: "shares",
+    category: "sets",
+    image: shares,
+    new_price: 50.0,
+    old_price: 85.5,
+  },
 ];
+
 export default all_product;

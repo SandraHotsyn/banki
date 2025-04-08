@@ -1,4 +1,4 @@
-import red_dragon from "./Червоний дракон.jpg";
+import red_dragon from "./red_dragon.jpg";
 
 let data = [
   {

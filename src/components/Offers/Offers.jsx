@@ -1,5 +1,5 @@
 import css from "./Offers.module.css";
-import exclusive from "../assets/Чорний дракон.jpg";
+import exclusive from "../assets/black_dragon.jpg";
 
 const Offers = () => {
   return (
