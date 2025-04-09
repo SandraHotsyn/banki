@@ -21,6 +21,16 @@ import new_year from "./NewYear.png";
 import noitra from "./Noitra.jpg";
 import rainbow from "./rainbow.jpg";
 import shares from "./shares.jpg";
+import maki_vugor from "./maki_vugor.jpg";
+import maki_kopchenyi from "./maki_kopchenyi.jpg";
+import maki_krab from "./maki_krab.jpg";
+import maki_krevetka from "./maki_krevetka.jpg";
+import maki_losos from "./maki_losos.jpg";
+import tyhrovyj_drakon from "./tyhrovyj_drakon.jpg";
+import tobume from "./tobume.jpg";
+import fila_miks from "./fila_miks.jpg";
+import fila_full from "./fila_full.jpg";
+import filadelfia_z_los from "./filadelfia_z_los.png";
 
 let all_product = [
   {
@@ -188,6 +198,86 @@ let all_product = [
     name: "shares",
     category: "sets",
     image: shares,
+    new_price: 50.0,
+    old_price: 85.5,
+  },
+  {
+    id: 26,
+    name: "макі вугор",
+    category: "maki",
+    image: maki_vugor,
+    new_price: 50.0,
+    old_price: 85.5,
+  },
+  {
+    id: 27,
+    name: "макі копчений",
+    category: "maki",
+    image: maki_kopchenyi,
+    new_price: 50.0,
+    old_price: 85.5,
+  },
+  {
+    id: 28,
+    name: "макі краб",
+    category: "maki",
+    image: maki_krab,
+    new_price: 50.0,
+    old_price: 85.5,
+  },
+  {
+    id: 29,
+    name: "макі креветка",
+    category: "maki",
+    image: maki_krevetka,
+    new_price: 50.0,
+    old_price: 85.5,
+  },
+  {
+    id: 30,
+    name: "макі лосось",
+    category: "maki",
+    image: maki_losos,
+    new_price: 50.0,
+    old_price: 85.5,
+  },
+  {
+    id: 31,
+    name: "Тигровий дракон",
+    category: "dragons",
+    image: tyhrovyj_drakon,
+    new_price: 50.0,
+    old_price: 85.5,
+  },
+  {
+    id: 32,
+    name: "тобуме",
+    category: "rolls",
+    image: tobume,
+    new_price: 50.0,
+    old_price: 85.5,
+  },
+  {
+    id: 33,
+    name: "Філа мікс",
+    category: "rolls",
+    image: fila_miks,
+    new_price: 50.0,
+    old_price: 85.5,
+  },
+  {
+    id: 34,
+    name: "Філа Фулл",
+    category: "rolls",
+    image: fila_full,
+    new_price: 50.0,
+    old_price: 85.5,
+  },
+  {
+    id: 35,
+    name: "Філадельфія з лососем",
+    category: "rolls",
+    image: filadelfia_z_los,
     new_price: 50.0,
     old_price: 85.5,
   },
