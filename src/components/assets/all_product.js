@@ -42,14 +42,6 @@ let all_product = [
     old_price: 85.5,
   },
   {
-    id: 2,
-    name: "Тигровий Дракон",
-    category: "maki",
-    image: red_dragon,
-    new_price: 50.0,
-    old_price: 85.5,
-  },
-  {
     id: 3,
     name: "фото вугор",
     category: "other",
