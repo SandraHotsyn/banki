@@ -15,7 +15,7 @@
 
 .reletedProducts hr {
   width: 150px; /* Зменшено ширину для мобільних */
-  height: 4px; /* Тонша лінія */
+  height: 6px;
   border-radius: 10px;
   background: #252525;
 }
