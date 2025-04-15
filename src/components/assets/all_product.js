@@ -31,6 +31,18 @@ import tobume from "./tobume.jpg";
 import fila_miks from "./fila_miks.jpg";
 import fila_full from "./fila_full.jpg";
 import filadelfia_z_los from "./filadelfia_z_los.png";
+import kkShrimp from "./kk_shrimp.jpg";
+import kkSalmon from "./kk_salmon.jpg";
+import kkTuna from "./kk_tuna.jpg";
+import kurosakiIchigo from "./kurosaki_ichigo.jpg";
+import kurosaki from "./kurosaki.jpg";
+import makiAvocado from "./maki_avocado.jpg";
+import makiCucumber from "./maki_cucumber.jpg";
+import makiSet from "./maki_set.jpg";
+import makiCheese from "./maki_cheese.jpg";
+import makiTuna from "./maki_tuna.jpg";
+import momo from "./momo.jpg";
+import dragonSet from "./dragon_set.jpg";
 
 let all_product = [
   {
@@ -266,12 +278,108 @@ let all_product = [
     old_price: 85.5,
   },
   {
-    id: 35,
+    id: 2,
     name: "Філадельфія з лососем",
     category: "rolls",
     image: filadelfia_z_los,
     new_price: 50.0,
     old_price: 85.5,
+  },
+  {
+    id: 35,
+    name: "Каліфорнія з креветкою",
+    category: "rolls",
+    image: kkShrimp,
+    new_price: 55.0,
+    old_price: 80.0,
+  },
+  {
+    id: 36,
+    name: "Каліфорнія з лососем",
+    category: "rolls",
+    image: kkSalmon,
+    new_price: 58.0,
+    old_price: 85.0,
+  },
+  {
+    id: 37,
+    name: "Каліфорнія з тунцем",
+    category: "rolls",
+    image: kkTuna,
+    new_price: 52.0,
+    old_price: 82.0,
+  },
+  {
+    id: 38,
+    name: "Куросакі Ічіґо",
+    category: "specials",
+    image: kurosakiIchigo,
+    new_price: 60.0,
+    old_price: 95.0,
+  },
+  {
+    id: 39,
+    name: "Куросакі",
+    category: "specials",
+    image: kurosaki,
+    new_price: 57.0,
+    old_price: 88.0,
+  },
+  {
+    id: 40,
+    name: "Макі з авокадо",
+    category: "maki",
+    image: makiAvocado,
+    new_price: 30.0,
+    old_price: 40.0,
+  },
+  {
+    id: 41,
+    name: "Макі з огірком",
+    category: "maki",
+    image: makiCucumber,
+    new_price: 28.0,
+    old_price: 38.0,
+  },
+  {
+    id: 42,
+    name: "Макі сет",
+    category: "sets",
+    image: makiSet,
+    new_price: 75.0,
+    old_price: 110.0,
+  },
+  {
+    id: 43,
+    name: "Макі з сиром",
+    category: "maki",
+    image: makiCheese,
+    new_price: 32.0,
+    old_price: 45.0,
+  },
+  {
+    id: 44,
+    name: "Макі з тунцем",
+    category: "maki",
+    image: makiTuna,
+    new_price: 34.0,
+    old_price: 50.0,
+  },
+  {
+    id: 45,
+    name: "Момо",
+    category: "specials",
+    image: momo,
+    new_price: 48.0,
+    old_price: 70.0,
+  },
+  {
+    id: 46,
+    name: "Сет драконів",
+    category: "sets",
+    image: dragonSet,
+    new_price: 90.0,
+    old_price: 130.0,
   },
 ];
 
