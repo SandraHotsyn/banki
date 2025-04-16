@@ -56,7 +56,7 @@ let all_product = [
   {
     id: 3,
     name: "фото вугор",
-    category: "other",
+    category: "futomaki",
     image: photo_vugor,
     new_price: 50.0,
     old_price: 85.5,
@@ -64,7 +64,7 @@ let all_product = [
   {
     id: 4,
     name: "фото копчений",
-    category: "other",
+    category: "futomaki",
     image: photo_kopchenyi,
     new_price: 50.0,
     old_price: 85.5,
@@ -72,7 +72,7 @@ let all_product = [
   {
     id: 5,
     name: "фото креветка",
-    category: "other",
+    category: "futomaki",
     image: photo_krevetka,
     new_price: 50.0,
     old_price: 85.5,
@@ -80,7 +80,7 @@ let all_product = [
   {
     id: 6,
     name: "фото лосось",
-    category: "other",
+    category: "futomaki",
     image: photo_losos,
     new_price: 50.0,
     old_price: 85.5,
@@ -88,7 +88,7 @@ let all_product = [
   {
     id: 7,
     name: "фото сир",
-    category: "other",
+    category: "futomaki",
     image: photo_syr,
     new_price: 50.0,
     old_price: 85.5,
@@ -256,7 +256,7 @@ let all_product = [
   {
     id: 32,
     name: "тобуме",
-    category: "rolls",
+    category: "original",
     image: tobume,
     new_price: 50.0,
     old_price: 85.5,
@@ -264,7 +264,7 @@ let all_product = [
   {
     id: 33,
     name: "Філа мікс",
-    category: "rolls",
+    category: "sets",
     image: fila_miks,
     new_price: 50.0,
     old_price: 85.5,
@@ -272,7 +272,7 @@ let all_product = [
   {
     id: 34,
     name: "Філа Фулл",
-    category: "rolls",
+    category: "sets",
     image: fila_full,
     new_price: 50.0,
     old_price: 85.5,
@@ -312,7 +312,7 @@ let all_product = [
   {
     id: 38,
     name: "Куросакі Ічіґо",
-    category: "specials",
+    category: "original",
     image: kurosakiIchigo,
     new_price: 60.0,
     old_price: 95.0,
@@ -320,7 +320,7 @@ let all_product = [
   {
     id: 39,
     name: "Куросакі",
-    category: "specials",
+    category: "original",
     image: kurosaki,
     new_price: 57.0,
     old_price: 88.0,
@@ -368,7 +368,7 @@ let all_product = [
   {
     id: 45,
     name: "Момо",
-    category: "specials",
+    category: "sets",
     image: momo,
     new_price: 48.0,
     old_price: 70.0,

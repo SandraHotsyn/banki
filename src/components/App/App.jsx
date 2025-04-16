@@ -30,6 +30,12 @@ function App() {
             element={<Category banner={banner_dragons} category="dragons" />}
           />
           <Route
+            path="/california1"
+            element={
+              <Category banner={banner_california} category="california1" />
+            }
+          />
+          <Route
             path="/california"
             element={
               <Category banner={banner_california} category="california" />
@@ -48,6 +54,20 @@ function App() {
           <Route
             path="/futomaki"
             element={<Category banner={banner_futomaki} category="futomaki" />}
+          />
+          <Route
+            path="/original"
+            element={<Category banner={banner_futomaki} category="original" />}
+          />
+          <Route
+            path="/sets"
+            element={<Category banner={banner_futomaki} category="sets" />}
+          />
+          <Route
+            path="/Deep-fried"
+            element={
+              <Category banner={banner_futomaki} category="Deep-fried" />
+            }
           />
           <Route
             path="/nagiri"
