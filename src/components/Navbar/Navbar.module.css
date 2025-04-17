@@ -81,6 +81,8 @@
   font-size: 12px; /* Менший розмір шрифту */
   background: red;
   color: white;
+  margin-top: -35px;
+  margin-left: -35px;
 }
 
 .links {
@@ -97,12 +99,7 @@
   .navbar {
     flex-direction: column; /* Стає вертикальною */
     align-items: flex-start;
-  }
-
-  .navMenu {
-    flex-direction: column; /* Вертикальне меню */
-    align-items: flex-start;
-    gap: 10px;
+    padding: 10px 0px;
   }
 
   .navMenu li {
@@ -110,47 +107,60 @@
   }
 
   .navLoginCart {
-    flex-direction: column; /* Кнопки розташовуються вертикально */
     gap: 10px;
-    width: 100%; /* Розтягується на всю ширину */
     align-items: flex-start;
   }
 
   .navLoginCart button {
-    width: 100%; /* Кнопка займає всю ширину */
+    width: 120px;
+    height: 45px;
     font-size: 14px;
     padding: 10px;
   }
 
   .navCartCount {
-    margin-top: 0; /* Виправлення позиціонування для мобільних */
-    margin-left: 0;
+    margin-top: -5px; /* Виправлення позиціонування для мобільних */
+    margin-left: -30px;
     position: relative;
   }
   .dropDown {
     display: block;
     rotate: -90deg;
     transition: 0.5s;
+    width: 30px;
   }
 
+  .navMenu {
+    display: none;
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    background-color: white;
+    justify-content: center;
+    top: 50px;
+  }
   .visible {
     display: flex;
+  }
+  .opev {
+    transform: rotate(90deg);
   }
 }
 
 /* Планшети (ширина екрана від 577px до 768px) */
 @media (min-width: 577px) and (max-width: 768px) {
   .navLogo p {
-    font-size: 20px; /* Трохи зменшено для планшетів */
+    font-size: 20px;
   }
 
   .navMenu {
-    gap: 15px; /* Менший відступ між пунктами */
-    font-size: 18px;
+    gap: 15px;
+    font-size: 14px;
   }
 
   .navLoginCart button {
-    width: 140px; /* Змінено ширину кнопки */
-    height: 45px;
+    width: 80px;
+    height: 35px;
+    font-size: 14px;
   }
 }
