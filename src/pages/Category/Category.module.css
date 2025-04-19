@@ -90,4 +90,8 @@
   .categoryBanner {
     width: 95%; /* Ширина банера для мобільних */
   }
+
+  .categoryIndexSort {
+    font-size: 12px;
+  }
 }

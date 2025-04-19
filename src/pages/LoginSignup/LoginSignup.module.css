@@ -120,26 +120,26 @@
 /* === Адаптація для мобільних === */
 @media (max-width: 576px) {
   .loginSignup {
-    padding: 20px; /* Оптимізовано для маленьких екранів */
+    padding: 10px;
   }
 
   .loginSignupContainer {
-    width: 100%; /* Займає всю ширину екрану */
-    padding: 20px;
+    width: 90%;
+    padding: 10px;
   }
 
   .loginSignupContainer h3 {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .loginSignupFilds input {
-    height: 40px; /* Зменшено висоту для мобільних */
-    font-size: 14px;
+    height: 40px;
+    font-size: 12px;
   }
 
   .loginSignupContainer button {
     height: 45px;
-    font-size: 16px;
+    font-size: 12px;
   }
 
   .loginSignupLogin {

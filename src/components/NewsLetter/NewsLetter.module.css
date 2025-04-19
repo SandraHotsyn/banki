@@ -65,11 +65,11 @@
 /* === Адаптація для мобільних пристроїв === */
 @media (max-width: 576px) {
   .newsLetter h3 {
-    font-size: 30px; /* Ще менший шрифт для мобільних */
+    font-size: 24px; /* Ще менший шрифт для мобільних */
   }
 
   .newsLetter p {
-    font-size: 16px;
+    font-size: 12px;
   }
 
   .newsLetter div {
@@ -77,11 +77,11 @@
   }
 
   .newsLetter input {
-    font-size: 14px; /* Зменшено шрифт */
+    font-size: 12px; /* Зменшено шрифт */
   }
 
   .newsLetter div button {
-    font-size: 14px; /* Зменшено шрифт кнопки */
+    font-size: 12px; /* Зменшено шрифт кнопки */
     height: 40px; /* Зменшено висоту */
   }
 }
@@ -93,7 +93,7 @@
   }
 
   .newsLetter p {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .newsLetter div {
@@ -101,11 +101,11 @@
   }
 
   .newsLetter input {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .newsLetter div button {
-    font-size: 16px;
+    font-size: 14px;
     height: 50px;
   }
 }

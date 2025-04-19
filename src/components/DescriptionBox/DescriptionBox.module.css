@@ -41,31 +41,31 @@
 /* === Адаптація для планшетів === */
 @media (min-width: 577px) and (max-width: 768px) {
   .descriptionBox {
-    margin: 80px 50px; /* Зменшено зовнішні відступи */
+    margin: 60px 20px; /* Зменшено зовнішні відступи */
   }
 
   .descNavBox {
     width: 140px; /* Менша ширина кнопок */
     height: 60px; /* Зменшено висоту кнопок */
-    font-size: 14px; /* Зменшено розмір тексту */
+    font-size: 12px; /* Зменшено розмір тексту */
   }
 
   .descrBoxDescription {
-    padding: 30px; /* Зменшено внутрішні відступи */
-    padding-bottom: 50px;
+    padding: 20px; /* Зменшено внутрішні відступи */
+    padding-bottom: 30px;
   }
 }
 
 /* === Адаптація для мобільних === */
 @media (max-width: 576px) {
   .descriptionBox {
-    margin: 50px 20px; /* Компактні зовнішні відступи */
+    margin: 30px 10px; /* Компактні зовнішні відступи */
   }
 
   .descNavBox {
     width: 100%; /* Кнопки займають всю ширину */
     height: 50px; /* Менша висота */
-    font-size: 14px; /* Зменшено розмір тексту */
+    font-size: 12px; /* Зменшено розмір тексту */
   }
 
   .descrNavigator {
@@ -73,9 +73,9 @@
   }
 
   .descrBoxDescription {
-    padding: 20px; /* Зменшено внутрішні відступи */
+    padding: 10px; /* Зменшено внутрішні відступи */
     padding-bottom: 30px;
-    font-size: 14px; /* Зменшено розмір тексту */
+    font-size: 12px; /* Зменшено розмір тексту */
     line-height: 1.4; /* Оптимальне міжрядкове інтервалювання */
   }
 }

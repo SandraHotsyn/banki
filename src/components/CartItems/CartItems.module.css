@@ -114,8 +114,8 @@
 /* === Адаптація для планшетів === */
 @media (min-width: 577px) and (max-width: 768px) {
   .cartItemsFormatMain {
-    grid-template-columns: 1fr 2fr 1fr 1fr; /* Менше колонок */
-    gap: 15px; /* Зменшено розриви */
+    grid-template-columns: 0.5fr 3fr 0.5fr 1fr; /* Менше колонок */
+    gap: 10px; /* Зменшено розриви */
   }
 
   .cartItemsDown {
@@ -125,7 +125,7 @@
 
   .quantity {
     width: 40px;
-    height: 35px;
+    height: 30px;
   }
 }
 
@@ -150,12 +150,12 @@
 
   .cartItemsTotal h2,
   .cartItemsTotal h3 {
-    font-size: 18px;
+    font-size: 14px;
     text-align: center; /* Центрування заголовків */
   }
 
   .promocode p {
-    font-size: 14px; /* Зменшено текст */
+    font-size: 12px; /* Зменшено текст */
   }
 
   .promobox {

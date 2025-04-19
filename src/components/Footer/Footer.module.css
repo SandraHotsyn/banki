@@ -104,7 +104,7 @@
 /* Планшети (ширина екрана від 577px до 768px) */
 @media (min-width: 577px) and (max-width: 768px) {
   .footerLogo p {
-    font-size: 32px; /* Трохи зменшено */
+    font-size: 30px; /* Трохи зменшено */
   }
 
   .footerLinks {

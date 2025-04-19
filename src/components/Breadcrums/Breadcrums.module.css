@@ -14,22 +14,22 @@
 /* === Адаптація для планшетів === */
 @media (min-width: 577px) and (max-width: 768px) {
   .breadcrums {
-    margin: 40px 50px; /* Зменшено зовнішні відступи */
-    font-size: 14px; /* Зменшено розмір шрифту */
-    gap: 6px; /* Зменшено відступи між елементами */
+    margin: 30px 40px;
+    font-size: 12px;
+    gap: 6px;
   }
 }
 
 /* === Адаптація для мобільних === */
 @media (max-width: 576px) {
   .breadcrums {
-    margin: 30px 20px; /* Компактні зовнішні відступи */
-    font-size: 12px; /* Менший розмір шрифту для мобільних */
-    gap: 4px; /* Менші відступи між елементами */
+    margin: 20px 10px;
+    font-size: 11px;
+    gap: 4px;
   }
 
   .breadcrums img {
-    width: 10px; /* Зменшено розмір іконок */
+    width: 10px;
     height: 10px;
   }
 }
